@@ -5,7 +5,7 @@ Setup for local embedder
 
 1. Install [`docker`](https://docs.docker.com/get-docker/), [`docker compose`](https://docs.docker.com/compose/install/) and clone the repo: 
    ```bash 
-   git clone https://github.com/cheshire-cat-ai/Local-Embedder.git
+   git clone https://github.com/cheshire-cat-ai/local-embedder.git
    ```
 2. Copy the .env.example and set the params:
    ```bash 
