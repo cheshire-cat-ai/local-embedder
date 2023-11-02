@@ -19,4 +19,12 @@ Setup for local embedder
     ```bash 
    docker-compose up
    ```
+5. Go to the Large Language Model settings, Select Ollama and in the base_url set:
+   ```bash
+   http://ollama:11434
+   ```
+6. Go to the Embedder Model settings, Select FastEmbed and in the base_url set:
+   ```bash
+   http://embedder:8000
+   ```
 

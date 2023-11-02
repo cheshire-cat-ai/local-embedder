@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  local-embedder:
+  embedder:
     build:
       context: ./embedder
     environment:
@@ -16,6 +16,8 @@ services:
   #   container_name: cheshire_cat_core
   #   depends_on:
   #     - cheshire-cat-vector-memory
+  #     - embedder
+  #     - ollama
   #   environment:
   #     - PYTHONUNBUFFERED=1
   #     - WATCHFILES_FORCE_POLLING=true
@@ -46,5 +48,23 @@ services:
   #   volumes:
   #     - ./long_term_memory/vector:/qdrant/storage
   #   restart: unless-stopped
-    
+
+  # ollama:
+  #   container_name: ollama_cat
+  #   image: ollama/ollama:latest
+  #   volumes:
+  #     - ./ollama:/root/.ollama
+  #   ports:
+  #     - 11434:11434
+  #   environment:
+  #     - gpus=all
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
+
+
   
