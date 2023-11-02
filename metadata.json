@@ -1,0 +1,47 @@
+{
+    "_default": {
+        "1": {
+            "name": "EmbedderFastEmbedConfig",
+            "value": {
+                "url": "http://embedder:8000",
+                "model": "intfloat/multilingual-e5-large",
+                "max_length": 512
+            },
+            "category": "embedder_factory",
+            "setting_id": "5dfbce5d-e917-4832-bdb6-b863eafa9e31",
+            "updated_at": 1698669361
+        },
+        "2": {
+            "name": "embedder_selected",
+            "value": {
+                "name": "EmbedderFastEmbedConfig"
+            },
+            "category": "embedder",
+            "setting_id": "ac4e3eaf-b41c-43b8-b7b4-0995c32d6dde",
+            "updated_at": 1698669361
+        },
+        "3": {
+            "name": "LLMOllamaConfig",
+            "value": {
+                "base_url": "http://ollama:11434",
+                "model": "zephyr:7b-beta",
+                "num_ctx": 2048,
+                "repeat_last_n": 64,
+                "repeat_penalty": 1.1,
+                "temperature": 0.7
+            },
+            "category": "llm_factory",
+            "setting_id": "5d312415-6d7b-4df7-939c-6da8c70342e2",
+            "updated_at": 1698960952
+        },
+        "4": {
+            "name": "llm_selected",
+            "value": {
+                "name": "LLMOllamaConfig"
+            },
+            "category": "llm",
+            "setting_id": "b4c6bb92-1730-4584-aa0d-4e27e4dc6149",
+            "updated_at": 1698960952
+        }
+    }
+}
