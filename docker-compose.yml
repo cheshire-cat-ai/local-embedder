@@ -32,8 +32,6 @@ services:
   #     - SAVE_MEMORY_SNAPSHOTS=${SAVE_MEMORY_SNAPSHOTS:-false}
   #   ports:
   #     - ${CORE_PORT:-1865}:80
-  #   volumes:
-  #     - ./core:/app
   #   command:
   #     - python
   #     - "-m"
